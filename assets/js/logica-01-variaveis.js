@@ -92,6 +92,6 @@ function calcularTempoMes(){
             "Segundos por minuto: " + segundosPorMinuto +
             "\nMinutos por hora: " + minutosPorHora +
             "\nHoras por dia: " + horasPorDia +
-            "\nSegundos por dia: " + segundosPorDia
+            "\nSegundos por day: " + segundosPorDia
         );
 }
