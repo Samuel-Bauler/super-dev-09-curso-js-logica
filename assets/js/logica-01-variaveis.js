@@ -1,5 +1,5 @@
 function exemploMensagem(){
-    alert("Hello World minha primeira mensagem Erick")
+    alert("Hello World minha primeira mensagem Samuel")
 }
 function exemploString(){
     // Criando a variável
