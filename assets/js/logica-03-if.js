@@ -122,14 +122,14 @@ function exemploOperadorLogicoOu() {
 
 function exemploLoja() {
   let nome1 = prompt("Digite o nome do jogo 1");
-  let categoria = prompt("Digite a categoria do Jogo");
+  let categoria1 = prompt("Digite a categoria do Jogo");
   let precoBase1 = 399.90;
 
   let precoComDesconto1 = 0;
   let percentualDesconto1 = 0;
   let precoDesconto1 = 0;
 
-  if ((categoria1 === "moba") || (categoria === "fps")) {
+  if ((categoria1 === "moba") || (categoria1 === "fps")) {
     percentualDesconto1 = 0.10;
     percentualDesconto1 = precoBase1 * percentualDesconto1;
     precoComDesconto = precoBase1 - precoDesconto1;
@@ -150,7 +150,7 @@ function exemploLoja() {
   let percentualDesconto2 = 0 
   let precoDesconto2 = 0
 
-  if ((categoria2 === "moba") || (categoria === "fps")) {
+  if ((categoria2 === "moba") || (categoria2 === "fps")) {
     percentualDesconto2 = 0.10;
     precoDesconto2 = precoBase2 * percentualDesconto2;
     precoComDesconto2 = precoBase2 - precoDesconto2;
