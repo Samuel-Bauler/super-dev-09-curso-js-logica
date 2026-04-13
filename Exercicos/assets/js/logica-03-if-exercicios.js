@@ -570,3 +570,86 @@ function exercicio44() {
     }
 
 }
+function exercicio45() {
+    let valor = parseFloat(prompt("Digite o valor da sua compra: "))
+    let minino = 500 
+    let desconto = 0.15
+
+    if (valor >= minino) {
+        valordesconto = desconto * valor
+        valordesconto - valor
+        alert("Você ganhou um desconto de R$ " + valorDesconto.toFixed(2))
+        alert("Valor final da compra: R$ " + valorFinal.toFixed(2))
+    } else {
+        alert("Sem desconto. Valor da compra: R$ " + valor.toFixed(2))
+    }
+}
+function exercicio46() {
+    let idade = parseInt(prompt("Digite sua idade: "))
+
+    if (idade >= 18) {
+        alert("Acesso permitido!")
+    } else {
+        alert("Acesso negado! Você precisa ter 18 anos ou mais.")
+    }
+}
+function exercicio47() {
+    let numero = parseInt(prompt("Digite um número: "))
+
+    if (numero % 10 === 0) {
+        alert("O número é divisível por 10!")
+    } else if (numero % 5 === 0) {
+        alert("O número é divisível por 5!")
+    } else {
+        alert("O número não é divisível por 5 nem por 10.")
+    }
+}
+function exercicio48() {
+    let num1 = parseInt(prompt("Digite um número: "));
+    let num2 = parseInt(prompt("Digite outro número: "));
+
+    let intervalo1 = [1,50]
+
+    if (num1 < intervalo1[0] && num2 < intervalo1[1]) {
+        alert("Eles estão")
+    } else {
+        alert("Não estão")
+    }
+}
+
+
+function exercicio49() {
+    let num1 = parseFloat(prompt("Digite o primeiro número: "))
+    let num2 = parseFloat(prompt("Digite o segundo número: "))
+    let num3 = parseFloat(prompt("Digite o terceiro número: "))
+
+    if (num1 + num2 > num3) {
+        alert("A soma de " + num1 + " e " + num2 + " é maior que " + num3)
+    } else if (num1 + num3 > num2) {
+        alert("A soma de " + num1 + " e " + num3 + " é maior que " + num2)
+    } else if (num2 + num3 > num1) {
+        alert("A soma de " + num2 + " e " + num3 + " é maior que " + num1)
+    } else {
+        alert("Nenhuma combinação de dois números é maior que o terceiro.")
+    }
+    // da pra melhorar PELAMOR
+}
+function exercicio50() {
+  let numero = parseInt(prompt("Digite um número:"));
+
+  if (numero > 0 && numero % 2 === 0) {
+    alert(numero + " é POSITIVO e PAR.");
+  } else {
+    alert(numero + " NÃO atende às duas condições.");
+  }
+}
+
+/* function exercicio50() {
+  let numero = parseInt(prompt("Digite um número:"));
+
+  if (numero > 0 && numero % 2 === 0) {
+    console.log(`${numero} é POSITIVO e PAR.`);
+  } else {
+    console.log(`${numero} NÃO atende às duas condições.`);
+  }
+*/
