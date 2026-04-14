@@ -644,12 +644,5 @@ function exercicio50() {
   }
 }
 
-/* function exercicio50() {
-  let numero = parseInt(prompt("Digite um número:"));
-
-  if (numero > 0 && numero % 2 === 0) {
-    console.log(`${numero} é POSITIVO e PAR.`);
-  } else {
-    console.log(`${numero} NÃO atende às duas condições.`);
-  }
-*/
+// console.log(`${numero} é POSITIVO e PAR.`);
+ 
