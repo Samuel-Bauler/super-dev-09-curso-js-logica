@@ -59,11 +59,46 @@ function substituirCorNaFrase() {
 }
 
 function trocarEstacao() {
-    let frase = "Eu gosto de verão"
+    let frase = "Eu gosto de verão";
 
-    let fraseFinal = frase.replace("verão" , "inverno" )
+    let fraseFinal = frase.replace("verão" , "inverno" );
 
     console.log(fraseFinal);
 }
+
+function mostrarQuatroPrimeirosCaracteres() {
+    let palavra = prompt("Digite uma palavra");
+
+    let quatroCarac = palavra.trim().slice(0, 4);
+
+
+    console.log(quatroCarac);
+}
+function separarNomeCompleto() {
+    let nomeCompleto = prompt("Digite seu nome completo: ");
+    
+    let partes = nomeCompleto.trim().split(" ");
+
+    let nome = partes[0];
+    let sobreNome = partes[1];
+    let sobreNome2 = partes[2];
+
+    console.log(nome + "\n" + sobreNome + " \n" + sobreNome2);
+}
+function removerEspacosExtras() {
+    let texto = "   JavaScript   "
+
+    texto = texto.trim();
+
+    console.log(texto);
+}
+function repetirPalavraTresVezes() {
+    let palavra = prompt("Digite uma palavra:");
+    let resultado = palavra.repeat(3);
+    
+    console.log(resultado);
+}
+
+
 
     

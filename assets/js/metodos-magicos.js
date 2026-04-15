@@ -151,7 +151,7 @@ function exemploPegarParteDaString() {
     // t = 9
     // a = 9
 
-    let nome = nomeCompleto.slice(0.4); // "Ruan"
+    let nome = nomeCompleto.slice(0, 4); // "Ruan"
     let sobrenome = nomeCompleto.slice(5, 10);
 }
 function pegarIndeceDoCaracter() {
