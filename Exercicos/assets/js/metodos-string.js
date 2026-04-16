@@ -98,6 +98,32 @@ function repetirPalavraTresVezes() {
     
     console.log(resultado);
 }
+function encontrarPosicaoPalavra() {
+    let frase = "Eu estudo JavaScript todos os dias"
+
+    let encontrarPalavra = frase.split(" ")
+
+    let javaScript = encontrarPalavra[2]
+
+    console.log(javaScript);
+    
+}
+function verificarInicioEFim() {
+    let palavra = prompt("Digite uma palavra");
+
+    if (palavra.startsWith("a")){
+         alert("A palavra começa com a letra A");
+    } else if (palavra.endsWith("o") === true) {
+        alert("A palavra termina com a letra O")
+    }
+}
+function trocarDominioEmail() {
+    let email = prompt("Digite seu e-mail");
+    let final = email.replace("@gmail.com" , "@hotmail.com")
+    
+    
+    console.log("Seu email alterado: " +final);
+}
 
 
 
