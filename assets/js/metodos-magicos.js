@@ -154,7 +154,7 @@ function exemploPegarParteDaString() {
     let nome = nomeCompleto.slice(0, 4); // "Ruan"
     let sobrenome = nomeCompleto.slice(5, 10);
 }
-function pegarIndeceDoCaracter() {
+function pegarIndiceDoCaracter() {
     let texto = "Abacate Uva Pera"
 
     let ultimoIndiceDoEspaco = texto.lastIndexOf(" ");
