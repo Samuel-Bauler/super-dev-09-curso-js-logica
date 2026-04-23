@@ -108,6 +108,7 @@ function exercicio17SomarPares() {
     let somaPares = 0;
     for (let indice = 0; indice < 5; indice++ ) {
         let numero = parseInt(prompt("Digite o número: "))
+
         if (numero % 2 === 0) {
             somaPares = somaPares + numero;
         }
@@ -122,12 +123,14 @@ function exercicio18MostrarMultiplosDeTres() {
         }
     }
 }
+
 function exercicio19CadastrarProdutos() {
     for (let indice = 0; indice < 3; indice++) {
         let nome = prompt("Digite o nome do produto: ")
     }
     console.log("Produtos cadastrados com sucesso");
 }
+
 function exercicio20RelatorioSimples() {
     let somaIdades = 0;
 
@@ -139,7 +142,7 @@ function exercicio20RelatorioSimples() {
     }
     let media = somaIdades / 3;
     console.log("Média das idade: " + media.toFixed(2));
-    console.log("Pessoas cadastradas: " + 3);
+    console.log("Pessoas cadastradas: " + indice);
     
 }
 function exercicio21MostrarNumerosParesIntervalo() {
@@ -230,7 +233,19 @@ function exercicio28ContarHomensEMulheres() {
             quantidadeFeminino = quantidadeFeminino + 1;
         }
     }
-    console.log("Homens: " + + quantidadeMasculino + "\n" + "Mulheres: " + quantidadeFeminino);
+    console.log("Homens: " + + quantidadeMasculino + "\n" + "Mulheres: " + quantidadeFeminino); 
     
 }
-
+function exercicio29ValidarNota() {
+    let somaNotas = 0;
+    let mediaNotas = 0;
+    for (let indice = 0; indice < 5; indice++) {
+        let nota = parseFloat(prompt("Digite a sua nota: "))
+        while ((nota < 0) || (nota > 10)) {
+            nota = parseFloat(prompt("Nota inválida. Digite a nota correta: "))
+        }
+        somaNotas = somaNotas + nota;
+        mediaNotas = somaNotas / 5;
+    }
+    console.log(mediaNotas);    
+}
