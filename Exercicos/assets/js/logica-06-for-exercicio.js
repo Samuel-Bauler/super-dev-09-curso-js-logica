@@ -157,7 +157,7 @@ function exercicio21MostrarNumerosParesIntervalo() {
 function exercicio22SomarNumerosIntervalo() {
     let numeroInicio = parseInt(prompt("digite o numero inicial: "));
     let numeroFinal = parseInt(prompt("digite o numero Final: "));
-    let somaNumeros = 0;
+
     for (let indice = numeroInicio; numeroInicio < numeroFinal; numeroInicio++ ) {
         somaNumeros = somaNumeros + numeroInicio;
         console.log(somaNumeros);
@@ -248,4 +248,53 @@ function exercicio29ValidarNota() {
         mediaNotas = somaNotas / 5;
     }
     console.log(mediaNotas);    
+}
+function exercicio30TabuadasCompletas() {
+    let numeroInicial = 0;
+    let numeroFinal = 5;
+    let tabuada = 0;
+    for (numeroInicial = 1; numeroInicial <= numeroFinal; numeroInicial = numeroInicial + 1) {
+        console.log("Tabuada do: " + numeroInicial);
+
+        for (let i = 1; i <= 10; i = i + 1) {
+            tabuada = numeroInicial * i;
+            console.log(numeroInicial + " x " + i + " = " + tabuada)
+        }
+    }
+}
+function exercicio31ContarAprovadosReprovados() {
+    let contadorAprovado = 0, contadorReprovado = 0;
+
+    for (i = 0; i < 6; i = i + 1) {
+        let nome = prompt("Digite seu nome: ");
+        let nota = parseFloat(prompt("Digite sua nota: "))
+
+        while ((nota < 0 ) || (nota > 10)) {
+            nota = parseInt(prompt("Nota incorreta. Digite a nota correta: "));
+        }
+
+        if (nota >= 7 ) {
+            contadorAprovado = contadorAprovado + 1;
+        } else {
+            contadorReprovado = contadorReprovado + 1;
+        }
+    }
+    console.log("Aprovado: " + contadorAprovado + "\n" + "Reprovado: " + contadorReprovado);
+}
+function exercicio32SomarValoresPositivos() {
+    let soma = 0;
+    for ( i = 0; i < 8; i = i + 1) {
+        let numero = parseInt(prompt("DIgite um numero: "));
+        
+        if (numero > 0) {
+            soma = soma + numero;
+        }
+    }
+    console.log("Soma dos números positivos apenas: " + soma); 
+}
+function exercicio33EncontrarNomeMaisLongo() {
+    let maiorNome = "";
+    for (i = 0; i < 5;i = i + 1) {
+        let nome = prompt("Digite seu nome: ") 
+    }
 }

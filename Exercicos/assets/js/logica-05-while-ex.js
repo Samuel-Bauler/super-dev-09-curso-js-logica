@@ -125,13 +125,16 @@ function exercicio07SolicitarPressaoArterial() { // FALAR COM O PROFESSOR
     let contadorPacientesMaior = 0;
     
     while (indice < 6) {
-        pressaoArtirial = parseInt(prompt("Qual é sua pressao arterial: ")).trim();  
-        if (pressaoArtirial > 14 ) { // 1.555555555555556
+        pressaoArtirial = prompt("Qual é sua pressao arterial: ").trim();  
+        
+        let partes = pressaoArtirial.split("/")
+        if ((partes[0] > 14) || (partes[1]) > 9) {
             contadorPacientesMaior = contadorPacientesMaior + 1;
+            
         }
-    indice = indice + 1;
+    indice = indice + 1
     }
-    alert(contadorPacientesMaior + " " + "Maiores de 14")
+    console.log(contadorPacientesMaior);
 }
 function exercicio08MenuContinuarCadastro() {
     let nome = "";
