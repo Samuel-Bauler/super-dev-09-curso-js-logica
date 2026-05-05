@@ -645,4 +645,6 @@ function exercicio50() {
 }
 
 // console.log(`${numero} é POSITIVO e PAR.`);
+
+
  

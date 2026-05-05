@@ -109,7 +109,7 @@ function verificarSeterminaCom() {
     if (bolo.endsWith("chocolate") === true) {
         alert("Boa escolha");
     } else {
-        alert("Não coma outro bolo")
+        alert("Não coma outro bolo");
     }
 }
 
@@ -122,9 +122,9 @@ function pegarPosicao() {
 
 function quebrarString() {
     // String         01234
-    let horaMinuto = "20:30"
+    let horaMinuto = "20:30";
 
-    let partes = horaMinuto.split(":")
+    let partes = horaMinuto.split(":");
     //             0      1
     // split => ["20" , "30"]
 
@@ -148,7 +148,7 @@ function exemploPegarParteDaString() {
     // C = 5 (Começa aqui)
     // o = 6
     // s = 7
-    // t = 9
+    // t = 8
     // a = 9
 
     let nome = nomeCompleto.slice(0, 4); // "Ruan"
@@ -158,7 +158,7 @@ function pegarIndiceDoCaracter() {
     let texto = "Abacate Uva Pera"
 
     let ultimoIndiceDoEspaco = texto.lastIndexOf(" ");
-
+                                                                
     let ultimaPalavra = texto.slice(ultimoIndiceDoEspaco + 1, texto.length)
     console.log(texto)
     console.log(ultimaPalavra)

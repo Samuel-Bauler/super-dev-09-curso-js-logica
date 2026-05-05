@@ -304,18 +304,21 @@ function exercicio34CalcularFatorial() {
     let numero = parseInt(prompt("Digite um número para calcular o fatorial:"));
     let resultado = 1;
 
-    for (let i = 1; i <= numero; i++) {
-        resultado = numero * (i - 1) ;
+    for (let i = 1; i <= numero; i = i + 1) {
+        resultado = numero * (i + 1) ;
     }
     console.log(numero + "!" + " = " + resultado)
 
 }
-function exercicio35ContagemRegressivaPersonalizada() {
-    let numero = parseInt(prompt("digite um numero: "));
+function exercicio34CalcularFatorial() {
+    let numero = parseInt(prompt("Digite um número:"));
+    let fatorial = 1;
 
-    for (let i = numero; i >= 0; i = i - 1) {
-        console.log(i);
+    for (let i = 1; i <= numero; i = i + 1) {
+        fatorial = fatorial * i;
     }
+
+    console.log("Fatorial de " + numero + " é: " + fatorial);
 }
 function exercicio36ContarNotasEmFaixas() {
     let contador0a4 = 0;
@@ -492,6 +495,7 @@ function exercicio43ForVerificarPrimo() {
         console.log("Não primo");
     }
 }
+                                                                                               
 
 
 
