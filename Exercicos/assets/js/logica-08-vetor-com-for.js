@@ -153,3 +153,87 @@ function exercicio10() {
         alert("Aluno não encontrado")
     }
 }
+function exercicio11() {
+    let numeros = [];
+
+    for (let i = 0; i < 6; i += 1) {
+        numeros.push(parseInt(prompt("Digite o " + (i + 1) + "º " + "numero")));
+    }
+
+    let texto =  "Numeros:\n"
+    for (let i = 0; i < 6; i += 1) {
+       texto = texto + numeros[i] + "\n";
+    }
+    alert(texto)
+
+    let textoMaioresQue10 = "numeros Maiores:\n"
+    for (let i = 0; i < 6; i += 1) {
+        if (numeros[i] > 10 ) {
+            textoMaioresQue10 = textoMaioresQue10 + numeros[i] + "\n"
+        }
+    }
+    alert(textoMaioresQue10)
+}
+
+function exercicio12() {
+    let nomes = [];
+    let contadorNomesMenor5Letras = 0;
+
+    for (let i = 0; i < 5; i += 1) {
+        nomes.push(prompt("Digite o " + (i + 1) + "º nome"));
+    }
+
+    for (let i = 0; i < 5; i += 1) {
+        if (nomes[i].length < 5) {
+            contadorNomesMenor5Letras += 1;
+        }
+    }
+    alert(contadorNomesMenor5Letras);
+}
+function exercicio13() {
+    let idades = [];
+    let menoresIdade = 0;
+    let maioresIdade = 0;
+
+    for (let i = 0; i < 7; i++ ) {
+        idades.push(prompt("Digite a " + (i + 1) + "º idade: "));
+        while ((idades[i] < 0) || (idades[i] > 120)) {
+            idades.push(prompt("Digite a idade corretamente."))
+            i += 1;
+        }
+    }
+
+    for (let i = 0; i < 7; i++ ) {
+        if (idades[i] < 18) {
+            menoresIdade += 1;
+        } else {
+            maioresIdade += 1;
+        }
+    }
+    console.log("Maiores de idade: " + maioresIdade + "\n" +
+        "Menores de idade: " + menoresIdade
+    );
+}
+
+function SistemaControleFinanceiro() {
+    let nome = [];
+    let salarioMensal = [];
+    let TotalGastosMensal = [];
+    let quantidadeDependentes = [];
+
+    let quantidadeCadastros = parseInt(prompt("Digite a quantidade de pessoas que você deseja cadastrar: "));
+    for (let i = 0; i < quantidadeCadastros; i += 1) {
+
+        nomes.push(prompt("Digite o " + (i + 1 ) + "º nome:"));
+        while (nomes[i] < 3) {
+            nomes.push(prompt("Digite o nome corretamente: "));
+        }
+
+        salarioMensal.push(parseFloat(prompt("Digite o salario Mensal de " + nomes[i])));
+        while (salarioMensal[i] < 0) {
+            salarioMensal.push(parseFloat(prompt("Digite o salario corretamente")));
+        }
+
+        
+    }
+}
